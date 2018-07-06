@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon Battle Project</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/pokestyle.css">
+	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="pick">
+			<form>
+				<input type="radio" name="pokemon" id="Blastoise" value="Blastoise"/>
+					<label for="Blastoise"> <img src="https://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/600px-009Blastoise.png"/></label>
+				<input type="radio" name="pokemon" id="Charizard" value="Charizard"/>
+					<label for="Charizard"> <img src="https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/600px-006Charizard.png"/></label>
+				<input type="radio" name="pokemon" id="Venusaur" value="Venusaur"/>
+					<label for="Venusaur"> <img src="https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/600px-003Venusaur.png"/></label>
+				<input type="radio" name="pokemon" id="Pikachu" value="Pikachu"/>
+					<label for="Pikachu"> <img src="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/600px-025Pikachu.png"/></label>
+				<input type="radio" name="pokemon" id="Onix" value="Onix"/>
+					<label for="Onix"> <img src="https://cdn.bulbagarden.net/upload/thumb/9/9a/095Onix.png/600px-095Onix.png"/></label>
+				<input type="radio" name="pokemon" id="Pidgeot" value="Pidgeot"/>
+					<label for="Pidgeot"> <img src="https://cdn.bulbagarden.net/upload/thumb/5/57/018Pidgeot.png/600px-018Pidgeot.png"/></label>
+			</form>
+			<h1>Choose your Pokemon!</h1>
+		</div>
+		
+		<div id="battle">
+			<div id="toppart">
+				<div id="opponent">
+					<h2><span class="name">Opponent Name</span> Lv 50</h2>
+					<img src="">
+					<h3><span class="currentHP">100</span>/<span class="maxHP">100</span></h3>
+				</div>
+					
+				<div id="player">
+					<h2><span class="name">Player Name</span> Lv 50</h2>
+					<img src="">
+					<h3><span class="currentHP">100</span>/<span class="maxHP">100</span></h3>
+				</div>
+			</div>
+			
+			<div id="bottompart">
+				<div id="messagebox">
+					<p><span id="msg">Message box</span><span id="blinker">X</span></p>
+				</div>
+				<ul>
+					<li><button>Menu</button></li>
+					<li><button>Commands</button></li>
+					<li><button>Go</button></li>
+					<li><button>Here</button></li>
+				</ul>
+			</div>
+	</div>
+	
+	<script type="text/javascript" src="assets/js/pokedb.js"></script>
+	<script type="text/javascript" src="assets/js/pokejs.js"></script>
+</body>
+</html>

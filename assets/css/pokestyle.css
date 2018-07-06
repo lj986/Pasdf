@@ -1,0 +1,153 @@
+
+
+body {
+	margin: 0;
+	min-height: 100%;
+	background: blue;
+}
+
+#container {
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+	height: 100vh;
+	
+}
+
+#pick{
+	z-index: 10;
+	position: absolute;
+	width: 100%;
+}
+
+#pick img {
+	width: 10%;
+	height: 10;
+	margin: 0;
+}
+
+#pick input[type="radio"]{
+	visibility: hidden;
+	position: absolute;
+}
+
+#pick input:checked + label img{
+	background: red;
+}
+
+#pick img{
+	float: left;
+	cursor: pointer;
+}
+
+#container #battle{
+	margin:0;
+	width: 100%;
+	height: 100%;
+}
+
+#battle img {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+}
+
+h2{
+	margin:0;
+}
+
+h3{
+	margin:0;
+}
+
+div #toppart{
+	height: 70%;
+	margin: 0;
+	background: linear-gradient(to bottom, #B4E191 , #D8F7D3);
+	float: left;
+	width: 100%;
+}
+
+div #bottompart{
+	margin: 0;
+	height: 30%;
+	background: #473D53;
+	float:left;
+	width: 100%;
+}
+
+#messagebox{
+    box-sizing: border-box;
+	width: 98%;
+	height: 90%;
+	float: left;
+    border-top: 3px solid #C54E41;
+    border-bottom: 3px solid #C54E41;
+    border-left: 8px solid #C54E41;
+    border-right: 8px solid #C54E41;
+	border-radius: 20px;
+	margin: 1%;
+	padding: 2%;
+	background: #699F9F
+}
+
+#bottompart p{
+	font-size: 4vw;
+	color:white;
+	width: 60%;
+	margin: 1% 1%;
+}
+
+ul{
+    box-sizing: border-box;
+	width: 40%;
+	margin: 1% 1% 1% 0;
+	z-index: 10;
+	height: 90%;
+	padding:0;
+}
+
+li {
+    box-sizing: border-box;
+	list-style-type: none;
+	height: 50%;
+	width: 50%;
+	float:left;
+	background: #7D6B7C;
+	border: 5px solid white;
+}
+
+li button{
+    box-sizing: border-box;
+	color:red;
+	width: 50%;
+	height: 50%;
+	padding:0;
+	margin: 11% 25%;
+	font: 100px;
+	border: 10px solid black;
+}
+
+.ouch{
+	animation: damaged 1s;
+}
+
+@keyframes damaged{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-4px, -4px) rotate(-1deg); }
+    20% { transform: translate(-5px, -1px) rotate(1deg); }
+    30% { transform: translate(7px, 3px) rotate(0deg); }
+    40% { transform: translate(5px, -1px) rotate(1deg); }
+    50% { transform: translate(-3px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(2px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.blinking{
+	color:red;
+	visibility: visible;
+}
+
